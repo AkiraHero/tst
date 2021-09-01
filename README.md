@@ -13,3 +13,51 @@ Here we want to explore the behavior of deep models, and find a solution to simu
 ## Developing Instruction
 
 Any incremental coding should be added to newly created branch, and wait for merge into master when pass test.
+
+
+
+## Usage
+
+The project now can be test by running following Python script
+
+
+
+- [x] Get the base line: target model performance on Minist/Cifar10 dataset
+
+```
+cd ModelSimulator/analysis/simple_model_evaluation/ 2python get_target_model_statistics.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample1 
+```
+
+```
+cd ModelSimulator/analysis/simple_model_evaluation/ 2python get_target_model_statistics.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample1 
+```
+
+
+
+- [x] Train the vae_gan model to imitate the behavior of  target model on Minist
+
+```
+cd ModelSimulator/main 2python train.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample3 
+```
+
+- [x] Test the trained vae_gan model for imitating the  target model on Minist
+
+```
+cd ModelSimulator/main 2python test.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample3 
+```
+
+
+
+- [ ] Train the vae_gan model to imitate the behavior of  target model on Cifar10
+
+```
+cd ModelSimulator/main 2python train.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample4 
+```
+
+- [ ] Test the trained vae_gan model for imitating the  target model on Cifar10
+
+```
+cd ModelSimulator/main 2python test.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample4 
+```
+
+ 
