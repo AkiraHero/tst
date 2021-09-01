@@ -25,11 +25,13 @@ The project now can be test by running following Python script
 - [x] Get the base line: target model performance on Minist/Cifar10 dataset
 
 ```
-cd ModelSimulator/analysis/simple_model_evaluation/ 2python get_target_model_statistics.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample1 
+cd ModelSimulator/analysis/simple_model_evaluation/ 
+python get_target_model_statistics.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample1 
 ```
 
 ```
-cd ModelSimulator/analysis/simple_model_evaluation/ 2python get_target_model_statistics.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample1 
+cd ModelSimulator/analysis/simple_model_evaluation/ 
+python get_target_model_statistics.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample1 
 ```
 
 
@@ -37,13 +39,15 @@ cd ModelSimulator/analysis/simple_model_evaluation/ 2python get_target_model_sta
 - [x] Train the vae_gan model to imitate the behavior of  target model on Minist
 
 ```
-cd ModelSimulator/main 2python train.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample3 
+cd ModelSimulator/main 
+python train.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample3 
 ```
 
 - [x] Test the trained vae_gan model for imitating the  target model on Minist
 
 ```
-cd ModelSimulator/main 2python test.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample3 
+cd ModelSimulator/main 
+python test.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample3 
 ```
 
 
@@ -51,13 +55,15 @@ cd ModelSimulator/main 2python test.py --cfg_dir xxxx/ModelSimulator/utils/confi
 - [ ] Train the vae_gan model to imitate the behavior of  target model on Cifar10
 
 ```
-cd ModelSimulator/main 2python train.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample4 
+cd ModelSimulator/main 
+python train.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample4 
 ```
 
 - [ ] Test the trained vae_gan model for imitating the  target model on Cifar10
 
 ```
-cd ModelSimulator/main 2python test.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample4 
+cd ModelSimulator/main 
+python test.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample4 
 ```
 
  
