@@ -67,3 +67,12 @@ python test.py --cfg_dir xxxx/ModelSimulator/utils/config/samples/sample4
 ```
 
  
+
+- [x] Experimenting on kitti dataset, target model = pretrained pvrcnn  
+
+```
+# launch a distributed training, remember to mofify the bash script according to your need
+cd ModelSimulator/script 
+./slurm_train.sh 
+```
+
